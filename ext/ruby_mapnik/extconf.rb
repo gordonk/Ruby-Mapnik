@@ -23,7 +23,7 @@ SOFTWARE.
 # Compile with Rice rather than straight mkmf
 require 'rubygems'
 gem 'rice'
-require 'rice'
+#require 'rice'
 require 'mkmf-rice'
 
 # Add the arguments to the linker flags.

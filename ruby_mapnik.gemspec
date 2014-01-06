@@ -23,6 +23,8 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency(%q<rice>, [">= 1.5.3"])
   s.add_runtime_dependency(%q<cairo>, [">= 1.12.8"])
   s.add_runtime_dependency(%q<chunky_png>, [">= 1.2.9"])
+  s.add_development_dependency(%q<rice>, [">= 1.5.3"])
+  s.add_development_dependency(%q<cairo>, [">= 1.12.8"])
   s.add_development_dependency(%q<rake-compiler>, [">= 0.9.2"])
   s.add_development_dependency(%q<hoe>, [">= 3.7.3"])
 end

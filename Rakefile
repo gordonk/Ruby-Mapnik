@@ -33,6 +33,8 @@ Hoe.spec 'ruby_mapnik' do
   self.extra_deps << ['cairo', '>= 1.12.8']
   self.extra_deps << ['chunky_png', '>= 1.2.9']
   self.extra_dev_deps << ['rake-compiler', '>= 0.9.2']
+  self.extra_dev_deps << ['rice', '>= 1.5.3']
+  self.extra_dev_deps << ['cairo', '>= 1.12.8']
 
   self.spec_extras = { :extensions => ["ext/ruby_mapnik/extconf.rb"] }
 

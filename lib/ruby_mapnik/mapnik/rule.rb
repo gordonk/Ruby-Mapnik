@@ -93,6 +93,12 @@ module Mapnik
       symbols << point
     end
 
+    def marker
+      point = Mapnik::MarkersSymbolizer.new
+      yield marker
+      symbols << marker
+    end
+
     def text(expression_text)
       exp = Mapnik::Expression.parse(expression_text)
       text = Mapnik::TextSymbolizer.new(exp, 'DejaVu Sans Book', 10, Mapnik::Color.new)

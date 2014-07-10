@@ -20,11 +20,13 @@ Gem::Specification.new do |s|
   s.summary = nil
   s.test_files = ["test/test_helper.rb", "test/test_line_pattern_symbolizer.rb", "test/test_mapnik_color.rb", "test/test_mapnik_coord.rb", "test/test_mapnik_datasource.rb", "test/test_mapnik_envelope.rb", "test/test_mapnik_expression.rb", "test/test_mapnik_feature.rb", "test/test_mapnik_font_engine.rb", "test/test_mapnik_layer.rb", "test/test_mapnik_line_symbolizer.rb", "test/test_mapnik_map.rb", "test/test_mapnik_markers_symbolizer.rb", "test/test_mapnik_point_symbolizer.rb", "test/test_mapnik_polygon_symbolizer.rb", "test/test_mapnik_projection.rb", "test/test_mapnik_raster_colorizer.rb", "test/test_mapnik_raster_symbolizer.rb", "test/test_mapnik_rule.rb", "test/test_mapnik_shield_symbolizer.rb", "test/test_mapnik_stroke.rb", "test/test_mapnik_style.rb", "test/test_mapnik_symbolizer.rb", "test/test_mapnik_text_symbolizer.rb", "test/test_polygon_pattern_symbolizer.rb", "test/test_ruby_mapnik.rb"]
 
-  s.add_runtime_dependency(%q<rice>, [">= 1.6.0"])
-  s.add_runtime_dependency(%q<cairo>, [">= 1.12.8"])
+  s.add_runtime_dependency 'rice', '>= 1.6.0', '>= 1.6.0'
+  #s.add_runtime_dependency(%q<rice>, [">= 1.6.0"])
+  s.add_runtime_dependency 'cairo', '>= 1.12.8', '>= 1.12.8'
+  #s.add_runtime_dependency(%q<cairo>, [">= 1.12.8"])
   s.add_runtime_dependency(%q<chunky_png>, [">= 1.2.9"])
-  s.add_development_dependency(%q<rice>, [">= 1.6.0"])
-  s.add_development_dependency(%q<cairo>, [">= 1.12.8"])
+  #s.add_development_dependency 'rice', '>= 1.6.0', '>= 1.6.0'
+  #s.add_development_dependency(%q<cairo>, [">= 1.12.8"])
   s.add_development_dependency(%q<rake-compiler>, [">= 0.9.2"])
   s.add_development_dependency(%q<hoe>, [">= 3.7.3"])
 end
